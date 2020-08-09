@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddGroupActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_group"
+        android:layout_margin="30dp"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/groupNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/group_text"
+        android:textSize="24sp"
+        android:text="@string/enter_group_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupNameEdit"
+        android:layout_below="@id/groupNameText"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        android:autofillHints=""
+        android:background="@drawable/rectangle"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        android:layout_below="@id/groupNameEdit"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:id="@+id/addNew"
+        />
+
+</RelativeLayout>
